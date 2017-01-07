@@ -1,2 +1,2 @@
 # mac-shell-scripts
-Joey's Mac shell scripts
+Joey's personal Mac shell scripts
