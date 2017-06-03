@@ -1,4 +1,5 @@
 #!/bin/sh
-mac upgrade
-mac update
-/Users/joey/vimupdate.sh
+brew update
+brew upgrade
+brew cleanup
+brew cask cleanup
