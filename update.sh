@@ -6,3 +6,4 @@ for i in $(brew cask outdated --quiet); do
 done
 brew cleanup
 brew cask cleanup
+npm up -g
