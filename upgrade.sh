@@ -6,4 +6,5 @@ for i in $(brew cask outdated --quiet); do
 done
 brew cleanup
 brew cask cleanup
-/Users/joey/vimupdate.sh
+tldr --update
+/Users/$USER/vimupdate.sh
