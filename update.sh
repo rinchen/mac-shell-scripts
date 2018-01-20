@@ -8,3 +8,4 @@ brew cleanup
 brew cask cleanup
 npm up -g
 tldr --update
+apm upgrade

@@ -7,4 +7,5 @@ done
 brew cleanup
 brew cask cleanup
 tldr --update
+apm upgrade
 /Users/$USER/vimupdate.sh
