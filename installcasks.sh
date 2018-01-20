@@ -1,3 +1,3 @@
 #!/bin/sh
 brew tap caskroom/cask
-brew cask install etrecheck adobe-acrobat-reader ccleaner gimp keka onyx sdformatter adobe-air istumbler libreoffice skype angry-ip-scanner discord java mac-informer steam google-chrome firefox thunderbird minecraft etcher macdown github zerotier-one telegram atom
+brew cask install adobe-acrobat-reader beaker-browser firefox istumbler mac-informer obs skype webtorrent adobe-air ccleaner gimp java macdown onyx steam zerotier-one angry-ip-scanner discord minecraft arduino etcher github-desktop keka monolingual riot telegram atom etrecheck google-chrome libreoffice mumble sdformatter thunderbird
