@@ -5,7 +5,6 @@ for i in $(brew cask outdated --quiet); do
     brew cask reinstall $i
 done
 brew cleanup
-brew cask cleanup
 npm up -g
 tldr --update
 apm upgrade
