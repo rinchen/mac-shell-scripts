@@ -1,11 +1,9 @@
 #!/bin/sh
 brew update
 brew upgrade
-for i in $(brew cask outdated --quiet); do
-    brew cask reinstall $i
-done
+brew cask --greedy upgrade
 brew cleanup
-brew prune
+brew cleanup --prune-prefix
 npm up -g
 tldr --update
 apm upgrade
