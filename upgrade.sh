@@ -1,11 +1,9 @@
 #!/bin/sh
 mac upgrade
 mac update
-for i in $(brew cask outdated --quiet); do
-    brew cask reinstall $i
-done
+brew cask --greedy upgrade
 brew cleanup
-brew prune
+brew cleanup --prune-prefix
 tldr --update
 apm upgrade
 /Users/$USER/vimupdate.sh
