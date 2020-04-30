@@ -6,4 +6,4 @@ brew cleanup
 brew cleanup --prune-prefix
 tldr --update
 apm upgrade
-/Users/$USER/vimupdate.sh
+.space-vim/install.sh --update
