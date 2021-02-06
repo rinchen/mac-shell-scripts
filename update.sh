@@ -1,7 +1,7 @@
 #!/bin/sh
 brew update
 brew upgrade
-brew cask --greedy upgrade
+brew update --cask --greedy
 brew cleanup
 brew cleanup --prune-prefix
 npm up -g
