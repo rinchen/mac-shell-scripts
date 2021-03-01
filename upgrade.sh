@@ -1,7 +1,7 @@
 #!/bin/sh
 mac upgrade
 mac update
-brew cask --greedy upgrade
+brew upgrade --cask --greedy
 brew cleanup
 brew cleanup --prune-prefix
 tldr --update
