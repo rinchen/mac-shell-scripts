@@ -1,2 +1,2 @@
 #!/bin/sh
-brew install git wget tmux winetricks lua luajit node ssh-copy-id mosh sshuttle mtr stormssh hub python curl stormssh-completion
+brew install adapter adobe-acrobat-reader appcleaner balenaetcher bitwarden bitwarden-cli brave-browser cabal curl discord dropbox element etrecheckpro firefox git github google-chrome handbrake hub iterm2 keka keybase latest libreoffice librewolf lua luajit maintenance magic-wormhole monitorcontrol mosh mtr node openinterminal python qbittorrent rectangle sdformatter signal session slack ssh-copy-id sshuttle stormssh stormssh-completion telegram thunderbird tmux typora wget wine-stable winetricks zoom
