@@ -1,4 +1,5 @@
 #!/bin/sh
+mas upgrade
 brew update
 brew upgrade
 brew update --cask --greedy
