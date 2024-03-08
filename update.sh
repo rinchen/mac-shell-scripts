@@ -1,11 +1,10 @@
-#!/bin/sh
-mas upgrade
+#!/usr/local/bin/fish
 brew update
 brew upgrade
-brew update --cask --greedy
+brew upgrade --cask --greedy
 brew cleanup
 brew cleanup --prune-prefix
-npm up -g
-tldr --update
-apm upgrade
-.space-vim/install.sh --update
+brew autoremove
+mas upgrade
+#npm up -g
+omf update
