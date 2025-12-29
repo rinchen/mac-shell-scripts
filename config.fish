@@ -1,12 +1,18 @@
-fish_add_path /usr/local/sbin
-fish_add_path /usr/local/opt/ruby/bin
-fish_add_path /usr/local/lib/ruby/gems/3.0.0/bin
-fish_add_path /Users/joey/go/bin
-set EDITOR nvim
-alias "vim"=nvim
-#fish_vi_key_bindings
-set -gx HOMEBREW_GITHUB_API_TOKEN
+set -U fish_greeting
+eval (/opt/homebrew/bin/brew shellenv)
+fish_add_path /opt/homebrew/opt/ruby/bin
+fish_add_path /opt/homebrew/lib/ruby/gems/3.0.0/bin
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
+fish_add_path /Users/joey/.local/bin
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+alias vim=nvim
+set -gx HOMEBREW_GITHUB_API_TOKEN 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
 test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
+if status is-interactive
+    fastfetch
+end
 atuin init fish | source
 complete -c atuin -n __fish_use_subcommand -s h -l help -d 'Print help'
 complete -c atuin -n __fish_use_subcommand -s V -l version -d 'Print version'
@@ -217,3 +223,6 @@ complete -c atuin -n "__fish_seen_subcommand_from help; and __fish_seen_subcomma
 complete -c atuin -n "__fish_seen_subcommand_from help; and __fish_seen_subcommand_from kv; and not __fish_seen_subcommand_from set; and not __fish_seen_subcommand_from get; and not __fish_seen_subcommand_from list" -f -a list
 complete -c atuin -n "__fish_seen_subcommand_from help; and __fish_seen_subcommand_from server; and not __fish_seen_subcommand_from start; and not __fish_seen_subcommand_from default-config" -f -a start -d 'Start the server'
 complete -c atuin -n "__fish_seen_subcommand_from help; and __fish_seen_subcommand_from server; and not __fish_seen_subcommand_from start; and not __fish_seen_subcommand_from default-config" -f -a default-config -d 'Print server example configuration'
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/joey/.cache/lm-studio/bin
