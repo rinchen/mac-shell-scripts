@@ -8,7 +8,7 @@ fish_add_path /Users/joey/.local/bin
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 alias vim=nvim
-set -gx HOMEBREW_GITHUB_API_TOKEN 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
+# set -gx HOMEBREW_GITHUB_API_TOKEN
 test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
 if status is-interactive
     fastfetch
