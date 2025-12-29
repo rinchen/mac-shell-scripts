@@ -7,6 +7,11 @@ fish_add_path /opt/homebrew/sbin
 fish_add_path /Users/joey/.local/bin
 set -gx EDITOR nvim
 set -gx VISUAL nvim
+alias cat=bat
+alias less=bat
+alias grep=batgrep
+alias man=batman
+alias diff=batdiff
 alias vim=nvim
 # set -gx HOMEBREW_GITHUB_API_TOKEN
 test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
