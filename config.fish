@@ -20,6 +20,36 @@ test -e $HOME/.iterm2_shell_integration.fish; and source $HOME/.iterm2_shell_int
 if status is-interactive
     fastfetch
 end
+function pipx
+    # If no arguments provided, just show help
+    if not set -q argv[1]
+        echo "💡 You've switched to uv! Use 'uv tool --help' for options."
+        return
+    end
+
+    set -l cmd $argv[1]
+    set -e argv[1]
+
+    switch "$cmd"
+        case install
+            echo "🚀 Redirecting to 'uv tool install'..."
+            uv tool install $argv
+        case uninstall
+            echo "🚀 Redirecting to 'uv tool uninstall'..."
+            uv tool uninstall $argv
+        case upgrade
+            echo "🚀 Redirecting to 'uv tool upgrade'..."
+            uv tool upgrade $argv
+        case list
+            echo "🚀 Redirecting to 'uv tool list'..."
+            uv tool list
+        case run
+            echo "🚀 Redirecting to 'uvx'..."
+            uvx $argv
+        case '*'
+            echo "❌ '$cmd' is not a common pipx command. Try 'uv tool --help'."
+    end
+end
 atuin init fish | source
 complete -c atuin -n __fish_use_subcommand -s h -l help -d 'Print help'
 complete -c atuin -n __fish_use_subcommand -s V -l version -d 'Print version'
