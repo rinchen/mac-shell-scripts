@@ -42,7 +42,6 @@ brew install \
     ghostty \
     iterm2 \
     keka \
-    latest \
     maintenance \
     monitorcontrol \
     onlyoffice \
